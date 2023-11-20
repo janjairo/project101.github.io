@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: rgb(180, 130, 226);
+            color: #fff;
+            text-align: center;
+            padding: 0px 0;
+        }
+
+        .container {
+            display: inline;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 100px;
+        }
+
+        .photo {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .photo a {
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s ease-in-out;
+            display: block;
+            border: 10px solid #fff;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .photo a:hover {
+            transform: scale(1.1);
+        }
+
+        .photo img {
+            max-width: 50%;
+            height: 100%;
+        }
+
+        footer {
+    clear: both;
+    color: black;
+    background-color: rgb(180, 130, 226);
+    text-align: center;
+    padding: 25px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Albums</h1>
+    </header>
+    
+    <div class="container">
+        <main>
+            <section id="center-content">
+                <h2>Photo Album</h2>
+                <div class="photo">
+                    <a href="1.jpg" data-lightbox="gallery" data-title="Image 1"><img src="1.jpg" alt="Image 1"></a>
+                    <a href="2.jpg" data-lightbox="gallery" data-title="Image 2"><img src="2.jpg" alt="Image 2"></a>
+                    <a href="3.jpg" data-lightbox="gallery" data-title="Image 3"><img src="3.jpg" alt="Image 3"></a>
+                    <a href="4.jpg" data-lightbox="gallery" data-title="Image 4"><img src="4.jpg" alt="Image 4"></a>
+                    <!-- Add more images with the Lightbox markup -->
+                </div>
+                <!-- Add more images as needed -->
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; All Rights Reserved 2023</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
